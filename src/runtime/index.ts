@@ -1,1 +1,1 @@
-export { renderTemplate, mountComponent } from './render';
+export { createApp } from './app';

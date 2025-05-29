@@ -7,5 +7,8 @@
 		"@types/node": "^22.15.24",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.5"
+	},
+	"dependencies": {
+		"acorn": "^8.14.1"
 	}
 }

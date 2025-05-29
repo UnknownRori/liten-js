@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <h1>
+            Hello, World 2
+        </h1>
+        <Counter />
+    </div>
+</template>
+
+<script lang="ts">
+import Counter from './components/Counter.lt';
+export default {
+    components: {
+            Counter,
+    },
+    mounted() {
+        console.log("Hi");
+    }
+}
+</script>

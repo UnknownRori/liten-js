@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      acorn:
+        specifier: ^8.14.1
+        version: 8.14.1
     devDependencies:
       '@types/node':
         specifier: ^22.15.24
@@ -276,6 +280,11 @@ packages:
   '@types/node@22.15.24':
     resolution: {integrity: sha512-w9CZGm9RDjzTh/D+hFwlBJ3ziUaVw7oufKA3vOFSOZlzmW9AkZnfjPb+DLnrV6qtgL/LNmP0/2zBNCFHL3F0ng==}
 
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   esbuild@0.25.5:
     resolution: {integrity: sha512-P8OtKZRv/5J5hhz0cUAdu/cLuPIKXpQl1R9pZtvmHWQvrAUVd0UNIPT4IB4W3rNOqVO0rlqHmCIbSwxh/c9yUQ==}
     engines: {node: '>=18'}
@@ -513,6 +522,8 @@ snapshots:
   '@types/node@22.15.24':
     dependencies:
       undici-types: 6.21.0
+
+  acorn@8.14.1: {}
 
   esbuild@0.25.5:
     optionalDependencies:

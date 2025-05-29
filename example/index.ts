@@ -1,3 +1,5 @@
-import mountComponent from './components/HelloWorld.html';
+import { createApp } from '../src';
+import HelloWorld from './components/HelloWorld.lt';
+import Counter from './components/Counter.lt';
 
-mountComponent(document.body);
+createApp(Counter, document.querySelector("#app"));
