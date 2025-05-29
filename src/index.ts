@@ -1,0 +1,1 @@
+export { LitenPlugin } from './vite';
