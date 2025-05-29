@@ -1,11 +1,22 @@
 <template>
-    <h1>
-        {{ counter }}
-    </h1>
+    <div>
+        <div>
+            <Header />
+        </div>
+
+        <h1>
+            {{ counter }}
+        </h1>
+    </div>
 </template>
 
 <script lang="ts">
+import Header from './Header.lt';
+
 export default {
+    components: {
+        Header,
+    },
     data() {
         return {
             counter: 1,

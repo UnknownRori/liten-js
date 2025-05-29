@@ -17,10 +17,8 @@ export function mountComponent(component: LitenComponent, target: HTMLElement) {
         for (const [name, componentChild] of Object.entries(component.script.components)) {
             const nodes = target.querySelectorAll(name.toLowerCase());
             nodes.forEach(node => {
-                node.innerHTML = '';
                 mountComponent(componentChild, node);
             });
         }
     }
-
 }
