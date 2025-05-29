@@ -12,4 +12,15 @@ export function mountComponent(component: LitenComponent, target: HTMLElement) {
     const ctx = component.script.data ? component.script.data() : {};
 
     target.innerHTML = renderTemplate(component.template, ctx);
+
+    if (component.script.components) {
+        for (const [name, componentChild] of Object.entries(component.script.components)) {
+            const nodes = target.querySelectorAll(name.toLowerCase());
+            nodes.forEach(node => {
+                node.innerHTML = '';
+                mountComponent(componentChild, node);
+            });
+        }
+    }
+
 }

@@ -8,7 +8,8 @@
 </template>
 
 <script lang="ts">
-import Counter from './components/Counter.lt';
+import Counter from './Counter.lt';
+
 export default {
     components: {
             Counter,
